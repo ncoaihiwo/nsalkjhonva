@@ -1,0 +1,1283 @@
+数字经济高速发展的当下，数据已成为电商行业转型升级的核心驱动力。精细化运营、智能化推荐、个性化服务逐步取代传统粗放式运营模式，成为电商平台提升用户体验、抢占市场份额的关键。作为国内头部电商平台，京东凭借完善的数字化生态与开放的技术体系，依托官方开放平台推出标准化API接口服务。其中，京东商品详情API接口作为核心数据服务端口，打破了平台数据壁垒，为第三方开发者、企业商家及各类电商服务主体提供合规、实时、全面的商品数据支撑，是实现电商智能推荐、个性化服务、数字化运营的核心基石，持续推动电商行业智能化、精细化迭代升级。
+一、京东商品详情API接口概述
+京东商品详情API接口是京东开放平台（宙斯JOS）推出的标准化、轻量化数据服务接口，基于RESTful架构搭建，依托HTTPS协议完成数据交互，以JSON格式输出结构化数据，支持通过商品SKU、wareId等唯一标识精准调取商品全维度信息，是第三方主体合规获取京东商品数据的核心渠道。
+该接口可全面覆盖京东平台商品核心数据，涵盖商品基础属性、价格体系、促销规则、库存状态、规格参数、图文素材、用户评价等百余项字段，适配自营、第三方店铺全品类商品数据调取需求。第三方开发者与企业可根据业务需求灵活调用、解析、处理数据，快速搭建各类电商衍生服务，为终端用户提供精准化、个性化的购物服务，同时助力商家实现数字化运营升级。相较于网络爬虫等非合规数据获取方式，该接口具备数据精准、实时性强、合规安全、稳定性高的核心优势。
+二、智能推荐与个性化服务的核心数据支撑
+智能推荐与个性化服务的落地，离不开海量、精准、实时的商品数据支撑。京东商品详情API接口凭借全方位的数据采集能力、实时同步机制及用户反馈抓取能力，构建起完善的电商数据底座，为各类智能化场景落地筑牢基础。
+（一）全维度商品数据，夯实服务基础
+该接口可输出商品完整结构化数据，不仅包含商品标题、品牌、类目、SKU编号、型号规格等基础信息，还涵盖实时售价、活动价、满减优惠、优惠券、库存数量、发货时效、详情图文等全维度内容。丰富且标准化的商品数据，既能够让终端用户全面、直观地掌握商品特性，快速了解产品核心优势，也为开发者搭建智能算法模型、设计个性化服务体系提供了充足的数据原料，是智能推荐功能落地的核心前提。
+（二）毫秒级实时同步，保障数据精准
+电商市场价格波动、库存变动、促销更新频繁，数据时效性直接决定服务质量与运营效果。京东商品详情API接口支持分钟级数据同步，可实时追踪京东平台商品的价格调整、库存增减、促销活动上下线、限购规则更新等动态变化，确保第三方平台与工具调取的数据与京东官方商城完全同步，数据误差率低于0.1%。对于消费者而言，实时数据可保障购物决策的准确性；对于商家与运营方而言，可依托实时库存、价格数据及时调整销售策略，有效规避库存积压、超卖、价格滞后等运营问题。
+（三）用户评价数据抓取，赋能体验优化
+接口支持调取商品全量用户反馈数据，包含累计评价总量、好评率、中差评占比、精选评价内容、用户标签、晒单素材等核心信息。从用户视角来看，真实的评价数据能够直观反映商品质量、使用体验与性价比，辅助消费者规避踩坑风险，做出理性购买决策；从商家与开发者视角来看，评价数据可精准反馈用户核心诉求、产品短板与服务痛点，为产品迭代、服务优化、口碑运营提供精准的数据参考。
+三、智能推荐与个性化服务的核心实现方式
+依托海量精准的商品数据，结合用户行为数据分析，京东商品详情API接口可适配多类智能化场景，落地个性化推荐、价格风控、竞品分析、决策辅助等多元化功能，全方位赋能电商服务升级。
+（一）个性化精准推荐，提升转化效率
+结合用户浏览记录、消费历史、偏好标签等用户画像数据，搭配接口获取的商品详情信息，开发者可搭建专属智能推荐算法。通过算法匹配用户兴趣与商品属性，为不同用户推送差异化、高适配的商品内容，彻底改变传统电商“千人一面”的展示模式。精准的个性化推荐不仅能够有效提升商品曝光率与用户下单转化率，还能优化用户购物体验，增强用户平台粘性。
+（二）实时价格监控比价，优化消费决策
+基于接口的实时价格数据能力，开发者可搭建专业的价格监控、比价工具，实时追踪单一商品的价格走势、历史价格波动，同时可实现跨品类、跨平台价格对比。对消费者而言，可精准捕捉低价窗口期、优惠活动节点，锁定最优购买方案；对商家而言，可依托竞品价格数据优化自身定价策略，提升产品价格竞争力。
+（三）多维竞品分析，助力市场布局
+接口输出的销量数据、评价数据、规格参数、价格体系等信息，可支撑企业开展精细化竞品分析与行业市场研究。商家与运营方可通过解析同类商品的销售热度、用户口碑、爆款参数、营销玩法，精准把握市场消费趋势与用户需求偏好，为新品研发、产品迭代、营销策略制定、店铺运营优化提供数据支撑，持续提升品牌市场竞争力。
+（四）全场景购物辅助，降低决策成本
+各类第三方电商工具、购物辅助应用可通过接入该接口，整合商品详情、价格走势、用户评价、优惠规则等多元信息，为消费者提供一站式购物决策服务。同时，结合用户购物习惯、消费能力、场景需求，输出个性化购物建议，大幅降低用户筛选商品、对比优劣的时间成本，让购物决策更高效、更理性。
+四、多元化落地应用场景
+凭借强大的数据能力与灵活的适配性，京东商品详情API接口已广泛应用于各类电商衍生平台与数字化工具，覆盖多行业、多场景的数字化服务需求。
+（一）中小电商平台
+中小型电商平台可通过接入该接口，快速丰富平台商品品类与内容体系，无需自主搭建供应链与商品库，即可同步京东海量优质商品资源。同时结合智能推荐算法，为平台用户提供个性化商品推送，快速完善平台服务能力，降低运营成本，提升用户留存率。
+（二）电商导购平台
+导购平台是该接口的核心应用场景之一。平台可实时调取京东商品详情、促销活动、优惠券、用户评价等数据，整合后为用户提供精准的选品推荐、优惠解读、优劣分析等一站式导购服务，帮助用户快速筛选高性价比商品，精准匹配自身需求，提升导购服务的专业性与实用性。
+（三）行业数据分析平台
+专业数据分析平台可依托接口批量采集京东全品类商品数据，开展行业趋势分析、市场热度研判、消费需求调研、竞品格局分析等工作。通过数据整合与深度挖掘，为品牌企业、电商商家、行业从业者提供专业的行业报告、数据洞察与运营解决方案，助力企业实现精准化营销与战略布局。
+（四）移动端电商工具应用
+各类移动端购物APP、小程序可基于该接口开发商品查询、价格比价、历史价格查询、爆款推荐、库存监控等多元化功能。结合移动端地理位置、使用场景、用户行为等数据，实现千人千面的个性化服务，为移动端用户提供轻量化、便捷化、智能化的购物体验。
+五、发展趋势与现存挑战
+（一）未来发展趋势
+在人工智能、大数据、云计算技术的持续赋能下，京东商品详情API接口将持续迭代升级，在电商智能化服务中发挥更大价值。一是数据维度持续丰富，平台将不断拓展接口数据字段，新增细分场景数据，满足开发者精细化、多元化的业务需求；二是智能化能力持续升级，依托机器学习与AI算法，接口将适配更精准的智能推荐、用户需求预判、市场趋势预测等高端场景；三是生态体系持续完善，京东将持续深化与开发者、企业、服务商的合作，优化接口调用规则与服务体系，构建更完善的电商数据服务生态，推动全行业智能化转型。
+（二）现存发展挑战
+在快速发展的同时，接口应用仍面临多重行业共性挑战。其一为数据安全与隐私保护难题，海量商品数据与用户行为数据的流转、调用过程中，需严格规避数据泄露、违规滥用等风险，严守合规底线；其二为数据稳定性保障难题，面对海量开发者的高频调用需求，需持续优化接口响应速度、并发承载能力，保障数据实时性与准确性；其三为需求适配难题，不同行业、不同场景的开发者对数据精度、字段类型、调用规则的需求差异较大，如何平衡标准化服务与个性化需求，是接口持续优化的核心方向。
+未来，京东需持续加大技术研发投入，优化接口架构与调用机制，强化数据安全合规管控，完善开发者服务体系，不断提升接口的稳定性、安全性与适配性，为电商行业数字化、智能化发展提供更坚实的数据支撑。
+商品详情：
+{
+    "userInfo": {},
+    "productAttributeVO": {
+        "attributes": [
+            {
+                "jumpUrl": "//list.jd.com/list.html?cat=12259,12260,9435&ev=exbrand_17815",
+                "labelName": "品牌",
+                "labelValue": "五粮液（WULIANGYE）"
+            },
+            {
+                "labelName": "商品编号",
+                "labelValue": "72295742590"
+            },
+            {
+                "jumpUrl": "//mall.jd.com/index-10279194.html?from=pc",
+                "labelName": "店铺",
+                "labelValue": "五粮液官方旗舰店"
+            },
+            {
+                "labelName": "货号",
+                "labelValue": "第八代"
+            },
+            {
+                "labelName": "保质期",
+                "labelValue": "长期保存"
+            },
+            {
+                "labelName": "香型",
+                "labelValue": "浓香型"
+            },
+            {
+                "labelName": "产地",
+                "labelValue": "四川宜宾市"
+            },
+            {
+                "labelName": "系列",
+                "labelValue": "五粮液第八代"
+            },
+            {
+                "labelName": "适用场景",
+                "labelValue": "送礼/礼品 商务宴请 纪念日"
+            },
+            {
+                "labelName": "包装形式",
+                "labelValue": "盒装"
+            }
+        ]
+    },
+    "laXinInfo": [
+        {
+            "laXinIconUrl": "https://img10.360buyimg.com/imagetools/jfs/t1/261718/22/6550/560/67769350Fdeefaae3/4bdb3c60cbde63ae.png",
+            "laXinJumpUrl": "https://pro.jd.com/mall/active/MHAX3QZutUs8DSadoAaRCRJ2713/index.html?babelChannel=ttt2",
+            "laXinText": "企业同享百亿补贴",
+            "laXinType": "4"
+        }
+    ],
+    "whiteBarInfo": {
+        "creditStatus": 1,
+        "isAva": true,
+        "isBtUser": false,
+        "isDiscountAll": false,
+        "isFull": false,
+        "isItemAva": true,
+        "isLogin": true,
+        "isShopAva": true,
+        "isSkuAva": true,
+        "key": "04A3777FF62C0A9D53C378D2DF481455",
+        "marketingText": "",
+        "noAvaInfo": "",
+        "planInfos": [
+            {
+                "curTotal": 1800.0,
+                "fee": 0.0,
+                "feeText": "0服务费",
+                "firstPay": 1800.0,
+                "firstRepayDate": "2026-01-24",
+                "isDiscount": false,
+                "isMaxDiscount": false,
+                "laterPay": 1800.0,
+                "mainTitle": "不分期",
+                "plan": 1,
+                "planFee": 0.0,
+                "rate": 0.0,
+                "secondTitle": "无服务费",
+                "text": "起",
+                "total": 1800.0
+            },
+            {
+                "curTotal": 609.0,
+                "fee": 27.0,
+                "feeText": "含服务费",
+                "firstPay": 609.0,
+                "firstRepayDate": "2026-01-24",
+                "isDiscount": false,
+                "isMaxDiscount": false,
+                "laterPay": 609.0,
+                "mainTitle": "￥609.00 x 3期",
+                "plan": 3,
+                "planFee": 9.0,
+                "rate": 0.5,
+                "secondTitle": "含服务费：费率0.50%，￥9.00&times;3期",
+                "text": "起",
+                "total": 1827.0
+            },
+            {
+                "curTotal": 309.0,
+                "fee": 54.0,
+                "feeText": "含服务费",
+                "firstPay": 309.0,
+                "firstRepayDate": "2026-01-24",
+                "isDiscount": false,
+                "isMaxDiscount": false,
+                "laterPay": 309.0,
+                "mainTitle": "￥309.00 x 6期",
+                "plan": 6,
+                "planFee": 9.0,
+                "rate": 0.5,
+                "secondTitle": "含服务费：费率0.50%，￥9.00&times;6期",
+                "text": "起",
+                "total": 1854.0
+            },
+            {
+                "curTotal": 159.0,
+                "fee": 108.0,
+                "feeText": "含服务费",
+                "firstPay": 159.0,
+                "firstRepayDate": "2026-01-24",
+                "isDiscount": false,
+                "isMaxDiscount": false,
+                "laterPay": 159.0,
+                "mainTitle": "￥159.00 x 12期",
+                "plan": 12,
+                "planFee": 9.0,
+                "rate": 0.5,
+                "secondTitle": "含服务费：费率0.50%，￥9.00&times;12期",
+                "text": "起",
+                "total": 1908.0
+            },
+            {
+                "curTotal": 84.0,
+                "fee": 216.0,
+                "feeText": "含服务费",
+                "firstPay": 84.0,
+                "firstRepayDate": "2026-01-24",
+                "isDiscount": false,
+                "isMaxDiscount": false,
+                "laterPay": 84.0,
+                "mainTitle": "￥84.00 x 24期",
+                "plan": 24,
+                "planFee": 9.0,
+                "rate": 0.5,
+                "secondTitle": "含服务费：费率0.50%，￥9.00&times;24期",
+                "text": "起",
+                "total": 2016.0
+            }
+        ],
+        "planRate": 0.50,
+        "propMarketText": "",
+        "url": "//bt.jd.com/v3/activity/open?rid=1766575033582",
+        "ver": "1"
+    },
+    "promiseFxgInfo": {},
+    "isFsAndCustom": false,
+    "beltBanner": "//img30.360buyimg.com/jdg/jfs/t1/263547/24/18280/20997/67a96901F1bef1e77/fcce6b07199642ff.png",
+    "colorSizeVO": {
+        "canAddCartMap": {
+            "10104425166814": 0,
+            "10200829364317": 0,
+            "10104419868035": 0,
+            "10066677095205": 0,
+            "10104424160223": 0,
+            "10200829364315": 0,
+            "72295742590": 0,
+            "10200829364316": 0,
+            "72295742591": 0,
+            "72074652312": 0,
+            "10053167057201": 0
+        },
+        "colorSizeList": [
+            {
+                "buttons": [
+                    {
+                        "fullImageUrl": "jfs/t1/380925/26/12209/139452/694901dfFd4f47da2/af10b073e3d04e7f.jpg",
+                        "imageType": 0,
+                        "no": "1",
+                        "skuId": "72074652312",
+                        "skuList": [
+                            "72074652312"
+                        ],
+                        "stock": "1",
+                        "text": "52度 500mL 1瓶"
+                    },
+                    {
+                        "fullImageUrl": "jfs/t1/380296/14/12254/189466/694901e3F7802ceca/e831e4300cc086af.jpg",
+                        "imageType": 0,
+                        "no": "2",
+                        "skuId": "72295742590",
+                        "skuList": [
+                            "72295742590"
+                        ],
+                        "stock": "1",
+                        "text": "52度 500mL 2瓶"
+                    },
+                    {
+                        "fullImageUrl": "jfs/t1/382967/10/4514/181628/694901e1F7176cec6/06215838c011740b.jpg",
+                        "imageType": 0,
+                        "no": "3",
+                        "skuId": "72295742591",
+                        "skuList": [
+                            "72295742591"
+                        ],
+                        "stock": "1",
+                        "text": "52度 500mL 6瓶"
+                    }
+                ],
+                "supportCustom": false,
+                "title": "规格"
+            }
+        ],
+        "limitInfo": {
+            "10104425166814": {
+                "limitMax": 200,
+                "limitMin": 1
+            },
+            "10200829364317": {
+                "limitMax": 200,
+                "limitMin": 1
+            },
+            "10104419868035": {
+                "limitMax": 200,
+                "limitMin": 1
+            },
+            "10066677095205": {
+                "limitMax": 200,
+                "limitMin": 1
+            },
+            "10104424160223": {
+                "limitMax": 200,
+                "limitMin": 1
+            },
+            "10200829364315": {
+                "limitMax": 200,
+                "limitMin": 1
+            },
+            "72295742590": {
+                "limitMax": 200,
+                "limitMin": 1
+            },
+            "10200829364316": {
+                "limitMax": 200,
+                "limitMin": 1
+            },
+            "72295742591": {
+                "limitMax": 200,
+                "limitMin": 1
+            },
+            "72074652312": {
+                "limitMax": 200,
+                "limitMin": 1
+            },
+            "10053167057201": {
+                "limitMax": 200,
+                "limitMin": 1
+            }
+        },
+        "stockInfo": {
+            "10104425166814": {
+                "dc": "-1",
+                "stockState": "33"
+            },
+            "10200829364317": {
+                "dc": "-1",
+                "stockState": "33"
+            },
+            "10104419868035": {
+                "dc": "-1",
+                "stockState": "33"
+            },
+            "10066677095205": {
+                "dc": "-1",
+                "stockState": "33"
+            },
+            "10104424160223": {
+                "dc": "-1",
+                "stockState": "33"
+            },
+            "10200829364315": {
+                "dc": "-1",
+                "stockState": "33"
+            },
+            "72295742590": {
+                "dc": "-1",
+                "stockState": "33"
+            },
+            "10200829364316": {
+                "dc": "-1",
+                "stockState": "33"
+            },
+            "72295742591": {
+                "dc": "-1",
+                "stockState": "33"
+            },
+            "72074652312": {
+                "dc": "-1",
+                "stockState": "33"
+            },
+            "10053167057201": {
+                "dc": "-1",
+                "stockState": "33"
+            }
+        }
+    },
+    "csfhText": "厂商发货",
+    "isLogin": true,
+    "commonLimitInfo": {
+        "limitMinNum": "1",
+        "limitText": "",
+        "mergeMaxBuyNum": "5",
+        "resultExtMap": {
+            "noSaleFlag": "0",
+            "limitNum": "0",
+            "strategyFlag": "1",
+            "limitUserFlag": "1",
+            "mergeMaxBuyNumInfo": "{\"mergeMaxBuyNum\":5,\"strategyId\":-2,\"type\":2}",
+            "limitTotal": "5",
+            "limitDay": "1",
+            "limitPeopleFlag": "1",
+            "limitBuyStrategyList": "[{\"limitTimeUnit\":\"1\",\"limitTotal\":\"5\",\"strategyId\":\"-2\",\"limitDay\":\"1\",\"limitType\":\"0\"}]",
+            "canBuy": "1",
+            "limitText": "",
+            "isPlusLimit": "0",
+            "mergeMaxBuyNum": "5",
+            "limitAreaFlag": "1",
+            "everyoneSurplusNum": "5"
+        }
+    },
+    "isInstallNow": false,
+    "preferenceVO": {
+        "againSharedLabel": [
+            {
+                "labelName": "赠品",
+                "type": "2"
+            },
+            {
+                "labelName": "最高返180京豆",
+                "type": "9"
+            }
+        ],
+        "preferencePopUp": {
+            "againSharedPreference": [
+                {
+                    "bigPromotion": false,
+                    "buriedPoint": {
+                        "beanNum": 180,
+                        "sceneType": "1"
+                    },
+                    "crossStoreFullCut": false,
+                    "formal": false,
+                    "originType": "9",
+                    "preferenceType": "9",
+                    "shortText": "最高返180京豆",
+                    "text": "返京豆",
+                    "value": "京东购物返京豆，订单完成后最高可返180京豆。特殊渠道订单不参与购物返豆，以订单实际返豆为准"
+                }
+            ],
+            "giftInfo": {
+                "gifts": [
+                    {
+                        "img": "https://img11.360buyimg.com/n1/s48x48_jfs/t1/378818/19/6036/109029/693fd444Fa7fbf4a3/b1010229735e4502.jpg",
+                        "num": "2",
+                        "skuId": "10159682547582",
+                        "title": "五粮液【伴手礼推荐】五粮小坛小酒伴手礼小酌浓香型白酒 52度 100mL 1瓶"
+                    },
+                    {
+                        "img": "https://img11.360buyimg.com/n1/s48x48_jfs/t1/210062/20/23048/457655/62987d2aEb14296a7/129affcf3b912e09.png",
+                        "num": "1",
+                        "skuId": "10050499501281",
+                        "title": "五粮液（WULIANGYE）【入仓】五粮液八代\\/1618手提袋"
+                    }
+                ],
+                "num": 3,
+                "text": "3件赠品",
+                "value": "赠品（条件：购买1件及以上，赠完即止）"
+            },
+            "sharedPreference": []
+        },
+        "sharedLabel": []
+    },
+    "govSupportInfo": {
+        "ab": true,
+        "beltBanner": "//img30.360buyimg.com/jdg/jfs/t1/263547/24/18280/20997/67a96901F1bef1e77/fcce6b07199642ff.png",
+        "cloudPay": false,
+        "govSubsidy": false,
+        "govSupport": false,
+        "rightText": "",
+        "subsidyScene": "0",
+        "subsidyType": "",
+        "subsidyUserStatus": "",
+        "yellowBar": false
+    },
+    "price": {
+        "ab": true,
+        "hagglePromotion": false,
+        "id": "72295742590",
+        "m": "2100.00",
+        "op": "2100.00",
+        "p": "1800.00"
+    },
+    "ipCityCode": "2813",
+    "pageConfigVO": {
+        "commentUgcDisjunctor": true,
+        "venderId": 10487909,
+        "recommendForYouSwitch": true,
+        "isYuYue": false,
+        "isCallRecommendFlag": false,
+        "growing": false,
+        "showShopNode": false,
+        "cat": [
+            12259,
+            12260,
+            9435
+        ],
+        "jumpChannel": "2",
+        "pType": 2,
+        "showAnswers": true,
+        "shopId": "10279194",
+        "extraService": false,
+        "stockSkuNum": 100,
+        "src": "jfs/t1/380296/14/12254/189466/694901e3F7802ceca/e831e4300cc086af.jpg",
+        "productLabels": {},
+        "showComment": true,
+        "toInstall": false,
+        "colorSizeBrushless": 0,
+        "isEBook": false,
+        "isZx": false,
+        "isPop": true,
+        "isSelf": false,
+        "isYuShou": false,
+        "memberShopFlag": false,
+        "skuid": 72295742590,
+        "bundleSale": false
+    },
+    "wareInfoReadMap": {
+        "fare": "0",
+        "thwa": "0",
+        "cn_brand": "五粮液（WULIANGYE）",
+        "isSopJdDy": "0",
+        "is7ToReturn": "0",
+        "vender_name": "四川五粮液新零售管理有限公司",
+        "product_id": "14728998596",
+        "timeliness_id": "28486572",
+        "isPrescriptCat": "0",
+        "height": "110",
+        "YuShou": "0",
+        "unLimit_cid": "9435",
+        "mspd": "0",
+        "shop_id": "10279194",
+        "buyer_post": "",
+        "size": "",
+        "IsJX": "0",
+        "sale_attributes": "[{\"dim\":1,\"saleName\":\"规格\",\"saleValue\":\"52度 500mL 2瓶\",\"sequenceNo\":2}]",
+        "img_dfs_url": "jfs/t1/380296/14/12254/189466/694901e3F7802ceca/e831e4300cc086af.jpg",
+        "category_id": "9435",
+        "product_features": "SoldOversea:0;deliveryTimeType:1;fylx:3;introductionUseFlag:0;is7ToReturn:0;isPayFirst:1;isSopJdDy:0;isUDSAttr:1;maxBuyTimes:5;mobileDescUseFlag:0;model:第八代;nameBrandType:brandtitlecn_name;nameWithoutBrand:【入会领券享会员价】第八代五粮液52度浓香型白酒;nationallySetWare:3;popsfkc:0;salemodel:POP_MODEL;scsj:1596417694297;seriesId:701444;wlzyc:2;yxxp:2;ztSale:1000019405-2474413822;ztzs:72295742590",
+        "jc_saler": "",
+        "day_limited_sales": "5",
+        "item_num": "第八代",
+        "seriesId": "701444",
+        "vender_attribute": ",ECD001,HYS001,",
+        "features": "consumptionVAT:0,inputVAT:13,outputVAT:13",
+        "nationallySetWareJdcom": "3",
+        "pay_first": "1",
+        "weight": "1.510",
+        "template_ids": "[600955827,601073223]",
+        "shop_name": "五粮液官方旗舰店",
+        "brand_id": "17815",
+        "wlzyc": "2",
+        "size_sequence": "0",
+        "color": "52度 500mL 2瓶",
+        "spec_sequence": "",
+        "shelf_life": "0",
+        "vender_id": "10487909",
+        "isQdh": "0",
+        "category_id1": "12259",
+        "category_id2": "12260",
+        "sfkc": "0",
+        "delivery": "deliveryPlace:0;",
+        "companyType": "0",
+        "length": "280",
+        "sku_status": "1",
+        "spec_name": "",
+        "nationallySetWare": "3",
+        "main_sku_id": "72074652312",
+        "yn": "1",
+        "warranty": "",
+        "sku_name": "五粮液【入会领券享会员价】第八代五粮液52度浓香型白酒 52度 500mL 2瓶",
+        "model": "第八代",
+        "supply_unit": "",
+        "color_sequence": "2",
+        "col_type": "0",
+        "vender_col_type": "0",
+        "vender_bizid": ",popsop,",
+        "width": "110",
+        "features2": "IsJX:0;bcdsjsp:1;dszt:1;isJDexpress:1;isxg:1;jingxixc:0;shortTitle:官方正品|第八代五粮液双瓶",
+        "spec": "",
+        "maxCartCat": "999",
+        "SoldOversea": "0",
+        "isXfpDept": "1",
+        "product_name": "五粮液【入会领券享会员价】第八代五粮液52度浓香型白酒",
+        "platform": "1",
+        "sku_mark": "8224",
+        "item_id": "-1",
+        "isOTCCat": "0"
+    },
+    "isCsfh": false,
+    "isSfkd": false,
+    "stepperVO": {
+        "disabled": false,
+        "hide": false,
+        "limitMinNum": "1",
+        "mergeMaxBuyNum": "5"
+    },
+    "beltBannerInfo": {
+        "bannerLeftIcon": "http://img30.360buyimg.com/jdg/jfs/t1/373084/27/10274/1086/6939a8a4F2d86d2eb/07fe0a6036b8e160.png",
+        "bannerRightText": "买新年好礼",
+        "bannerRightTextColor": "",
+        "beltBannerUrl": "//img30.360buyimg.com/jdg/jfs/t1/378088/2/1803/1210/6939a8b0F6803841f/07fe6f60b41ba31c.png",
+        "countDown": 0,
+        "labels": "10006210",
+        "leftArrowIcon": "",
+        "leftIconLink": "",
+        "middleIcon": "http://img30.360buyimg.com/jdg/jfs/t1/352391/10/14742/5231/6939a89cF9003a4c1/07fe0c80b4c89106.png",
+        "subsidyType": "",
+        "subsidyUserStatus": "",
+        "type": "8",
+        "yuYueNum": 0
+    },
+    "abData": {
+        "indicator": {
+            "abBuriedTag": "tsabtest|base64|UENUZXN0Xzc0MzYzfHByZQ|tsabtest",
+            "business": "indicator",
+            "keyParamMap": {},
+            "label": "pre",
+            "success": true
+        },
+        "multi_price": {
+            "abBuriedTag": "tsabtest|base64|UENUZXN0XzgxNjQ4fGJlc3Q|tsabtest",
+            "business": "multi_price",
+            "keyParamMap": {
+                "hit": 1
+            },
+            "label": "best",
+            "success": true
+        },
+        "new_people": {
+            "abBuriedTag": "tsabtest|base64|UENUZXN0Xzk5ODE2fHhpbnJlbg|tsabtest",
+            "keyParamMap": {
+                "new_user": 1
+            },
+            "label": "xinren",
+            "success": true,
+            "type": "16"
+        },
+        "item_pk": {
+            "abBuriedTag": "tsabtest|base64|UENUZXN0XzcyNjUyfGJhc2U|tsabtest",
+            "business": "item_pk",
+            "keyParamMap": {},
+            "label": "base",
+            "success": true
+        },
+        "mini_trade": {
+            "abBuriedTag": "tsabtest|base64|UENUZXN0XzkzOTgyfFByZTI|tsabtest",
+            "keyParamMap": {},
+            "label": "Pre2",
+            "success": true,
+            "type": "17"
+        },
+        "main_image": {
+            "abBuriedTag": "tsabtest|base64|UENUZXN0XzgzNTg3fHByZTI|tsabtest",
+            "business": "main_image",
+            "keyParamMap": {
+                "first_show": 2
+            },
+            "label": "pre2",
+            "success": true
+        },
+        "abTags": [
+            "tsabtest|base64|UENUZXN0XzExMDY3M3xzaGl5YW56dQ|tsabtest",
+            "tsabtest|base64|UENUZXN0Xzk4Mzg3fHNoaXlhbnp1X2JhbmdkYW4|tsabtest",
+            "tsabtest|base64|UENUZXN0XzEwMTA1M3xzaGl5YW56dQ|tsabtest",
+            "tsabtest|base64|UENUZXN0Xzk4OTk3fHNoaXlhbnp1|tsabtest",
+            "tsabtest|base64|UGNBQlRlc3RfNzg3NTh8cHJl|tsabtest",
+            "tsabtest|base64|UENUZXN0Xzc0MzYzfHByZQ|tsabtest",
+            "tsabtest|base64|UENUZXN0Xzk5ODk1fGJhc2U|tsabtest",
+            "tsabtest|base64|UENUZXN0XzgyOTkzfGJlc3Q|tsabtest",
+            "tsabtest|base64|UENUZXN0XzEwMjYwMHxzaGl5YW56dQ|tsabtest",
+            "tsabtest|base64|UENUZXN0Xzk1ODAxfHNoaXlhbnp1X3Br|tsabtest",
+            "tsabtest|base64|UENUZXN0Xzc5MDE3fGJlc3Q|tsabtest",
+            "tsabtest|base64|UENUZXN0XzcxNzM4fGJhc2U|tsabtest",
+            "tsabtest|base64|UENUZXN0XzgxNjQ4fGJlc3Q|tsabtest",
+            "tsabtest|base64|UENUZXN0XzcyNjUyfGJhc2U|tsabtest",
+            "tsabtest|base64|UENUZXN0XzkzOTgyfFByZTI|tsabtest",
+            "tsabtest|base64|UENUZXN0XzcxMzY2fGJhc2U|tsabtest",
+            "tsabtest|base64|UENUZXN0XzEwODU0OHxzaGl5YW56dQ|tsabtest",
+            "tsabtest|base64|UENUZXN0XzgzNTg3fHByZTI|tsabtest",
+            "tsabtest|base64|UENUZXN0XzEwMjY2MXxzaGl5YW56dQ|tsabtest",
+            "tsabtest|base64|UENUZXN0Xzk2NTg0fGJhc2U|tsabtest",
+            "tsabtest|base64|U01CQUJUZXN0Xzg0MTY1fHByZQ|tsabtest",
+            "tsabtest|base64|UENUZXN0XzEwNTYzOXxzaGl5YW56dQ|tsabtest",
+            "tsabtest|base64|UENUZXN0XzEwMjY1NHxzaGl5YW56dQ|tsabtest",
+            "tsabtest|base64|UENUZXN0XzEwOTc4MXxkdWl6aGFvenU|tsabtest",
+            "tsabtest|base64|UENUZXN0Xzk5ODE2fHhpbnJlbg|tsabtest"
+        ],
+        "jd_fashion": {
+            "abBuriedTag": "tsabtest|base64|UENUZXN0XzEwMjYwMHxzaGl5YW56dQ|tsabtest",
+            "keyParamMap": {
+                "duizhaozu": 1
+            },
+            "label": "shiyanzu",
+            "success": true,
+            "type": "19"
+        },
+        "promotion_optimize": {
+            "abBuriedTag": "tsabtest|base64|UENUZXN0Xzc5MDE3fGJlc3Q|tsabtest",
+            "business": "promotion_optimize",
+            "keyParamMap": {
+                "hit": 1
+            },
+            "label": "best",
+            "success": true
+        },
+        "xundan_guide": {
+            "abBuriedTag": "tsabtest|base64|UENUZXN0Xzk4OTk3fHNoaXlhbnp1|tsabtest",
+            "keyParamMap": {
+                "duizhaozu": 1
+            },
+            "label": "shiyanzu",
+            "success": true,
+            "type": "15"
+        },
+        "preference_split_pile": {
+            "abBuriedTag": "tsabtest|base64|UENUZXN0XzEwNTYzOXxzaGl5YW56dQ|tsabtest",
+            "keyParamMap": {
+                "duizhaozu": 1
+            },
+            "label": "shiyanzu",
+            "success": true,
+            "type": "22"
+        },
+        "multiple_videos": {
+            "abBuriedTag": "tsabtest|base64|UENUZXN0XzExMDY3M3xzaGl5YW56dQ|tsabtest",
+            "keyParamMap": {
+                "duizhaozu": 1
+            },
+            "label": "shiyanzu",
+            "success": true,
+            "type": "23"
+        },
+        "enPlus_price": {
+            "abBuriedTag": "tsabtest|base64|UGNBQlRlc3RfNzg3NTh8cHJl|tsabtest",
+            "business": "enPlus_price",
+            "keyParamMap": {},
+            "label": "pre",
+            "success": true
+        },
+        "mini_shop": {
+            "abBuriedTag": "tsabtest|base64|UENUZXN0XzEwOTc4MXxkdWl6aGFvenU|tsabtest",
+            "business": "mini_shop",
+            "keyParamMap": {
+                "duizhaozu": 0
+            },
+            "label": "duizhaozu",
+            "success": true
+        },
+        "enterprise_plus_guide": {
+            "abBuriedTag": "tsabtest|base64|U01CQUJUZXN0Xzg0MTY1fHByZQ|tsabtest",
+            "keyParamMap": {
+                "duizhaozu": 1
+            },
+            "label": "pre",
+            "success": true,
+            "type": "14"
+        },
+        "bottom_recommend": {
+            "abBuriedTag": "tsabtest|base64|UENUZXN0XzEwMTA1M3xzaGl5YW56dQ|tsabtest",
+            "business": "bottom_recommend",
+            "keyParamMap": {
+                "duizhaozu": 1
+            },
+            "label": "shiyanzu",
+            "success": true
+        },
+        "pc_rank": {
+            "abBuriedTag": "tsabtest|base64|UENUZXN0Xzk4Mzg3fHNoaXlhbnp1X2JhbmdkYW4|tsabtest",
+            "keyParamMap": {
+                "duizhaozu": 1
+            },
+            "label": "shiyanzu_bangdan",
+            "success": true,
+            "type": "13"
+        },
+        "image_roll": {
+            "abBuriedTag": "tsabtest|base64|UENUZXN0Xzk5ODk1fGJhc2U|tsabtest",
+            "business": "image_roll",
+            "keyParamMap": {
+                "duizhaozu": 0
+            },
+            "label": "base",
+            "success": true
+        },
+        "img_search": {
+            "abBuriedTag": "tsabtest|base64|UENUZXN0XzEwODU0OHxzaGl5YW56dQ|tsabtest",
+            "business": "img_search",
+            "keyParamMap": {
+                "duizhaozu": 1
+            },
+            "label": "shiyanzu",
+            "success": true
+        },
+        "image_adjust": {
+            "abBuriedTag": "tsabtest|base64|UENUZXN0Xzk2NTg0fGJhc2U|tsabtest",
+            "business": "image_adjust",
+            "keyParamMap": {},
+            "label": "base",
+            "success": true
+        },
+        "ware_recommendation": {
+            "abBuriedTag": "tsabtest|base64|UENUZXN0XzEwMjY1NHxzaGl5YW56dQ|tsabtest",
+            "keyParamMap": {
+                "duizhaozu": 1
+            },
+            "label": "shiyanzu",
+            "success": true,
+            "type": "18"
+        },
+        "item_gov_price": {
+            "abBuriedTag": "tsabtest|base64|UENUZXN0XzcxMzY2fGJhc2U|tsabtest",
+            "business": "item_gov_price",
+            "keyParamMap": {},
+            "label": "base",
+            "success": true
+        },
+        "jing_dou": {
+            "abBuriedTag": "tsabtest|base64|UENUZXN0XzgyOTkzfGJlc3Q|tsabtest",
+            "keyParamMap": {},
+            "label": "best",
+            "success": true,
+            "type": "8"
+        },
+        "main_imager_attr": {
+            "abBuriedTag": "tsabtest|base64|UENUZXN0XzEwMjY2MXxzaGl5YW56dQ|tsabtest",
+            "keyParamMap": {
+                "duizhaozu": 1
+            },
+            "label": "shiyanzu",
+            "success": true,
+            "type": "20"
+        },
+        "shiyanzu_pk": {
+            "abBuriedTag": "tsabtest|base64|UENUZXN0Xzk1ODAxfHNoaXlhbnp1X3Br|tsabtest",
+            "business": "shiyanzu_pk",
+            "keyParamMap": {
+                "pklevelup_test": 1
+            },
+            "label": "shiyanzu_pk",
+            "success": true
+        },
+        "item_gb_fastTest": {
+            "abBuriedTag": "tsabtest|base64|UENUZXN0XzcxNzM4fGJhc2U|tsabtest",
+            "business": "item_gb_fastTest",
+            "keyParamMap": {},
+            "label": "base",
+            "success": true
+        }
+    },
+    "ext": {
+        "commonRecommend": true,
+        "sf_opt": true,
+        "appleLimit": true,
+        "imageSearchBtn": true,
+        "mini_trade": true,
+        "isNotFsAndCustom": false,
+        "xundanGuide": true,
+        "govAb": true,
+        "half_day_arrive": true,
+        "jxLicenceDegrade": true,
+        "multiAddCart": true,
+        "entExc": true,
+        "defaultUmc": true,
+        "taxOn": true,
+        "hxSubsidy": true,
+        "bjkPrice": true
+    },
+    "isServiceJdkd": false,
+    "rankInfoList": [
+        {
+            "rankName": "五粮液第八代白酒热卖榜·第3名",
+            "rankTypeInt": 10,
+            "rankUrl": "https://pro.jd.com/mall/active/4JRfHorUDXgL77E9YdNxSCNMKwkJ/index.html?pageNum=1&bbtf=1&queryType=1&rankId=3586398&rankType=10&fromName=ProductdetailPC&preSrc=null&currSku=72295742590&currSpu=14728998596"
+        }
+    ],
+    "wareInfo": {
+        "extend": {},
+        "wareInfoMap": {
+            "sku_status": "1"
+        }
+    },
+    "qualityLifeVO": {
+        "isQualityLife": true,
+        "qualificationParameterVO": {
+            "catId1": "12259",
+            "catId2": "12260",
+            "catId3": "9435",
+            "pid": "14728998596",
+            "skuId": "72295742590",
+            "venderId": "10487909"
+        },
+        "qualityLifeImg": "jfs/t2077/314/2192172483/11044/f861504a/56ca6792N64e5eafc.png",
+        "qualityLifeList": [
+            {
+                "dataType": "1",
+                "name": "质量承诺",
+                "type": "J-ql-iframe ql-ico-1"
+            },
+            {
+                "dataType": "5",
+                "name": "耐久性标签",
+                "type": "ql-ico-5"
+            },
+            {
+                "dataType": "3",
+                "name": "吊牌",
+                "type": "ql-ico-3"
+            },
+            {
+                "dataType": "4",
+                "name": "质检报告",
+                "type": "ql-ico-4"
+            },
+            {
+                "dataType": "2",
+                "name": "CCC证书",
+                "type": "ql-ico-2"
+            },
+            {
+                "dataType": "v1",
+                "name": "实时温控",
+                "type": "fresh-ico-1"
+            },
+            {
+                "dataType": "v2",
+                "name": "检验报告",
+                "type": "fresh-ico-2"
+            }
+        ]
+    },
+    "itemShopInfo": {
+        "followCount": 3397302,
+        "hideDisplay": false,
+        "hotCates": [
+            {
+                "categoryType": 1,
+                "cid": 15009257,
+                "cname": "第八代五粮液",
+                "commendSkuId": 72295742590,
+                "imgPath": "https://img11.360buyimg.com/cms/jfs/t1/149092/15/32878/111008/647ed4b3Fddac1145/6b5d7714a71447c9.jpg"
+            },
+            {
+                "categoryType": 3,
+                "cid": 0,
+                "cname": "五粮小坛",
+                "commendSkuId": 10106558551705,
+                "imgPath": "https://img11.360buyimg.com/cms/jfs/t1/355243/9/1022/139235/69041279F1ffbf9bd/5a532726194ce078.jpg"
+            },
+            {
+                "categoryType": 3,
+                "cid": 0,
+                "cname": "一见倾心",
+                "commendSkuId": 10176470278040,
+                "imgPath": "https://img11.360buyimg.com/cms/jfs/t1/374202/39/797/120107/692fe377F7e8884ca/5af4b44f994785d8.jpg"
+            },
+            {
+                "categoryType": 1,
+                "cid": 18177088,
+                "cname": "礼盒专区",
+                "commendSkuId": 10054233685554,
+                "imgPath": "https://img11.360buyimg.com/cms/jfs/t1/69185/37/20680/122593/647ecf5fF526c6d12/4ff9fb5e91814574.jpg"
+            }
+        ],
+        "isYearFiveStarTab": false,
+        "shopGrade": {
+            "afterSaleGrade": "高",
+            "afterSaleGradeLevel": "3",
+            "afterSaleScore": "9.2",
+            "customServiceGrade": "高",
+            "customServiceGradeLevel": "3",
+            "customServiceScore": "10.0",
+            "evaluateGrade": "高",
+            "evaluateGradeLevel": "3",
+            "evaluateScore": "10.0",
+            "logisticsGrade": "高",
+            "logisticsGradeLevel": "3",
+            "logisticsScore": "10.0",
+            "scoreRankRateGrade": "5.0"
+        },
+        "shopId": 10279194,
+        "shopLongLogo": "https://img30.360buyimg.com/popshop/jfs/t1/49392/26/22744/4457/6390a6b4E9be16f20/0cc3d3c5bfb9bc7f.jpg",
+        "shopName": "五粮液官方旗舰店",
+        "shopSquareLogo": "https://img30.360buyimg.com/popshop/jfs/t1/138244/16/31810/13331/6390a6b4Efe6829ba/957e1815fe888dab.jpg",
+        "shopTabList": [
+            {
+                "tabClassType": 1,
+                "tabCode": "shop_var_redRect",
+                "tabData": "5年老店",
+                "tabDisplayType": 2,
+                "tabImg": "http://m.360buyimg.com/cc/jfs/t1/157957/4/30960/453/63365fc4E1344bd4d/975c6f95c22fed20.png",
+                "tabKey": "N_OLD_SHOP"
+            }
+        ],
+        "shopUrl": "//mall.jd.com/index-10279194.html?from=pc",
+        "venderType": "0"
+    },
+    "govTextSwitch": true,
+    "mainImageVO": {
+        "carouselArea": [
+            {
+                "imageUrl": "jfs/t1/380296/14/12254/189466/694901e3F7802ceca/e831e4300cc086af.jpg",
+                "siteType": "1"
+            },
+            {
+                "imageUrl": "jfs/t1/185749/38/31473/80456/63b78ab3F1eb134d8/4903a3135c9daf41.jpg",
+                "siteType": "1"
+            },
+            {
+                "imageUrl": "jfs/t1/159779/6/23832/101061/61c3dce1Ec1e987bb/d4428718de523520.png",
+                "siteType": "1"
+            },
+            {
+                "imageUrl": "jfs/t1/117368/34/17862/126566/5f61e13dE81d654b8/b97bdcd7dbf25d55.jpg",
+                "siteType": "1"
+            },
+            {
+                "imageUrl": "jfs/t1/202159/12/1102/86048/6115d3dcE6c490066/f3688cbf52aa2990.jpg",
+                "siteType": "1"
+            },
+            {
+                "imageUrl": "jfs/t1/151851/1/10343/76661/5fdac75cE36139767/0020504fd942af5d.jpg",
+                "siteType": "1"
+            },
+            {
+                "imageUrl": "jfs/t1/225998/8/20531/32135/667e34c9Fe84945b1/8cf6d510a017f32e.jpg",
+                "siteType": "1"
+            },
+            {
+                "siteType": "3"
+            }
+        ],
+        "mainImageArea": {
+            "imageUrl": "jfs/t1/380296/14/12254/189466/694901e3F7802ceca/e831e4300cc086af.jpg"
+        }
+    },
+    "bottomBtnVO": {
+        "bottomBtnItems": [
+            {
+                "buttonEvent": {
+                    "id": 1,
+                    "link": "",
+                    "miniTrade": false,
+                    "qrcodeText": "",
+                    "source": "common"
+                },
+                "buttonStyle": {
+                    "containerFormat": {
+                        "backgroundColor": ""
+                    },
+                    "state": 1,
+                    "subBottomLeftTextFormat": {},
+                    "subBottomRightTextFormat": {},
+                    "subBottomTextFormat": {},
+                    "subLeftTextFormat": {},
+                    "subRightTextFormat": {},
+                    "textFormat": {
+                        "text": "加入购物车"
+                    },
+                    "type": 1
+                },
+                "buttonType": 1,
+                "scene": "100",
+                "tracking": {}
+            },
+            {
+                "buttonEvent": {
+                    "id": 2,
+                    "link": "",
+                    "miniTrade": true,
+                    "qrcodeText": "",
+                    "source": "common"
+                },
+                "buttonStyle": {
+                    "containerFormat": {
+                        "backgroundColor": ""
+                    },
+                    "state": 1,
+                    "subBottomLeftTextFormat": {},
+                    "subBottomRightTextFormat": {},
+                    "subBottomTextFormat": {},
+                    "subLeftTextFormat": {},
+                    "subRightTextFormat": {},
+                    "textFormat": {
+                        "text": "立即购买"
+                    },
+                    "type": 1
+                },
+                "buttonType": 2,
+                "scene": "100",
+                "tracking": {}
+            },
+            {
+                "buttonEvent": {
+                    "id": 18,
+                    "link": "",
+                    "miniTrade": false,
+                    "qrcodeText": ""
+                },
+                "buttonStyle": {
+                    "containerFormat": {
+                        "backgroundColor": ""
+                    },
+                    "state": 2,
+                    "subBottomLeftTextFormat": {},
+                    "subBottomRightTextFormat": {},
+                    "subBottomTextFormat": {},
+                    "subLeftTextFormat": {},
+                    "subRightTextFormat": {},
+                    "textFormat": {
+                        "text": "白条支付"
+                    },
+                    "type": 1
+                },
+                "buttonType": 4,
+                "scene": "37",
+                "tracking": {}
+            }
+        ]
+    },
+    "stockInfo": {
+        "deliveryInfo": {
+            "state": "SUPPORT",
+            "support": true
+        },
+        "isPlus": false,
+        "code": 1,
+        "promiseInfoText": "22:00前付款，预计<b>明天(12月25日)</b>送达",
+        "realStockState": "33",
+        "promiseResult": "22:00前付款，预计<b>明天(12月25日)</b>送达",
+        "serviceInfo": "由 <span class='hl_red'>京东</span> 发货, <a href='http://mall.jd.com/index-10279194.html' clstag='shangpin|keycount|product|bbtn' class='hl_red'>五粮液官方旗舰店</a>提供售后服务. ",
+        "stockDesc": "<strong>有货</strong>",
+        "dcashDesc": "包邮（请以提交订单时为准） <a title=\"了解配送费收取标准\" href=//help.jd.com/user/issue/109-4012.html target=\"_blank\"><i class=\"sprite-question\"></i></a>",
+        "fxgCode": "0",
+        "is7ToReturn": "不支持7天无理由退货",
+        "stockState": 33,
+        "stockInfo": {
+            "ae": 0,
+            "ag": "-1",
+            "ah": -1,
+            "at": "-1",
+            "availableNum": -1,
+            "businessType": 0,
+            "ca": -1,
+            "da": "-1",
+            "date": "",
+            "dc": "-1",
+            "dcId": 3,
+            "dcIdDely": 3,
+            "ef": 0,
+            "eh": -1,
+            "ej": "-1",
+            "ek": -1,
+            "freshEdi": 0,
+            "popPatType": -1,
+            "preStore": -1,
+            "railModel": 0,
+            "reservationType": "OTHER",
+            "rid": 110008433,
+            "sidDely": 171,
+            "siteId4Dada": -1,
+            "stDely": 0,
+            "stockM": 0,
+            "stockState": "AVAILABLE",
+            "stockV": 0,
+            "storeId": 171,
+            "storeId4Dada": -1,
+            "storeState4Dada": -1,
+            "storeType": 0,
+            "useStockNum": 99
+        },
+        "serverIcon": {
+            "basicNewIcons": [
+                {
+                    "code": "p24",
+                    "helpLink": "https://help.jd.com/user/issue/291-4537.html",
+                    "text": "7天价保",
+                    "tip": "在下单后7天内，商品出现降价可享受价保服务（商品在消费者下单后因参与百亿补贴、政府补贴等活动导致降价不支持价保），可点击“>”了解详细规则"
+                },
+                {
+                    "code": "p96",
+                    "text": "免费上门退换",
+                    "tip": "售后时效内申请退换货，选择上门取件优先安排京东物流服务，无需支付退换货运费；选择自寄，售后完成后补首重运费。"
+                },
+                {
+                    "code": "p1",
+                    "text": "闪电退款",
+                    "tip": "京东优质用户提交售后申请退货时，满足相关条件快速退款的服务"
+                },
+                {
+                    "code": "p8",
+                    "helpLink": "//help.jd.com/user/issue/list-114-470.html",
+                    "text": "极速审核",
+                    "tip": "京东优质用户提交售后申请退货时，满足相关条件最快0秒审核通过的服务"
+                },
+                {
+                    "code": "deliveryAndAfterSales",
+                    "text": "京东发货&店铺售后",
+                    "tip": "京东发货&店铺售后"
+                },
+                {
+                    "text": "不支持7天无理由退货"
+                }
+            ],
+            "wlfwIcons": [
+                {
+                    "code": "Pop_nextday",
+                    "helpLink": "https://help.jd.com/user/issue/92-154.html",
+                    "iconServiceType": 1,
+                    "text": "明日达",
+                    "tip": "指定时间前下单，次日送达"
+                },
+                {
+                    "code": "pop_sssm",
+                    "helpLink": "https://help.jd.com/user/issue/254-4130.html",
+                    "iconServiceType": 6,
+                    "text": "送货上门",
+                    "tip": "京东快递为您提供送货上门服务"
+                },
+                {
+                    "code": "popservice_yysh",
+                    "helpLink": "https://help.jd.com/user/issue/103-983.html",
+                    "iconServiceType": 6,
+                    "text": "预约送货",
+                    "tip": "京东物流为该商品提供预约送货服务"
+                },
+                {
+                    "code": "popservice_bfsh",
+                    "helpLink": "https://help.jd.com/user/issue/103-983.html",
+                    "iconServiceType": 6,
+                    "text": "部分收货",
+                    "tip": "如果收件人收货时发现部分货物存在缺少配件、物流损等情形，京东物流提供订单半收服务"
+                },
+                {
+                    "code": "pop_Selfpick",
+                    "helpLink": "//help.jd.com/user/issue/103-983.html",
+                    "iconServiceType": 5,
+                    "text": "自提",
+                    "tip": "我们提供多种自提服务，包括京东自提点、自助提货柜、京东校园派、京东星配站、京东便民站等服务"
+                }
+            ],
+            "basicIcons": [
+                {
+                    "code": "p24",
+                    "helpLink": "https://help.jd.com/user/issue/291-4537.html",
+                    "text": "7天价保",
+                    "tip": "在下单后7天内，商品出现降价可享受价保服务（商品在消费者下单后因参与百亿补贴、政府补贴等活动导致降价不支持价保），可点击“>”了解详细规则"
+                },
+                {
+                    "code": "p96",
+                    "text": "免费上门退换",
+                    "tip": "售后时效内申请退换货，选择上门取件优先安排京东物流服务，无需支付退换货运费；选择自寄，售后完成后补首重运费。"
+                },
+                {
+                    "code": "p1",
+                    "text": "闪电退款",
+                    "tip": "京东优质用户提交售后申请退货时，满足相关条件快速退款的服务"
+                },
+                {
+                    "code": "p8",
+                    "helpLink": "//help.jd.com/user/issue/list-114-470.html",
+                    "text": "极速审核",
+                    "tip": "京东优质用户提交售后申请退货时，满足相关条件最快0秒审核通过的服务"
+                }
+            ]
+        },
+        "dcashDescDegrade": false,
+        "support": [],
+        "dcashDescNew": "包邮<a title=\"了解配送费收取标准\" href=\"//help.jd.com/user/issue/109-4012.html\" target=\"_blank\"><i class=\"sprite-question\"></i><span>请以提交订单时为准</span></a>",
+        "isStock": true
+    },
+    "isSamMember": false,
+    "commonConfig": {
+        "mini_trade": "//storage.360buyimg.com/retail-mall/pc_settlement_lite/pro/0.0.1/createSettlementLite.js",
+        "bPkJs": "//storage.360buyimg.com/bjd-utils-sdk/bjdcommon/aishoparound/1.0.0.js"
+    },
+    "isPlusMember": "5",
+    "skuHeadVO": {
+        "skuIconImageList": [],
+        "skuTitle": "五粮液【入会领券享会员价】第八代五粮液52度浓香型白酒 52度 500mL 2瓶"
+    },
+    "isJdkd": false,
+    "isJdwl": true,
+    "carButlerVO": {
+        "suingCarButlerNodes": false
+    },
+    "promotion": {
+        "canReturnHaggleInfo": false,
+        "isBargain": false,
+        "isTwoLine": false,
+        "limitBuyInfo": {
+            "limitNum": "0",
+            "noSaleFlag": "0",
+            "resultExt": {
+                "noSaleFlag": "0",
+                "limitNum": "0",
+                "strategyFlag": "1",
+                "limitUserFlag": "1",
+                "mergeMaxBuyNumInfo": "{\"mergeMaxBuyNum\":5,\"strategyId\":-2,\"type\":2}",
+                "limitTotal": "5",
+                "limitDay": "1",
+                "limitPeopleFlag": "1",
+                "limitBuyStrategyList": "[{\"limitTimeUnit\":\"1\",\"limitTotal\":\"5\",\"strategyId\":\"-2\",\"limitDay\":\"1\",\"limitType\":\"0\"}]",
+                "canBuy": "1",
+                "limitText": "",
+                "isPlusLimit": "0",
+                "mergeMaxBuyNum": "5",
+                "limitAreaFlag": "1",
+                "everyoneSurplusNum": "5"
+            }
+        },
+        "prompt": ""
+    },
+    "tracerId": "10105444934-146668-1766575033482",
+    "brandVipInfo": {
+        "vip": false
+    }
+}
+联系方式：@some1899
